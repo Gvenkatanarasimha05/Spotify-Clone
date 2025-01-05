@@ -1,0 +1,281 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #fff;
+  position: relative;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  background-color: rgb(17, 16, 16);
+  padding: 24px;
+  font-size: 0.5rem;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.sidebar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  display: block;
+}
+
+/* Topbar */
+.topbar img {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.top-bar .logo h2 {
+  color: #1db954;
+  font-size: 1.5em;
+  height: 10px;
+  width: 30px;
+}
+
+.topbar .search-bar input {
+  width: 350px;
+  height: 50px;
+  padding: 10px;
+  left: 200px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  background-color: #e0e0e0;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  background-color: rgb(17, 16, 16);
+  padding: 14px 30px;
+  margin-left: 4.4%;
+  border-radius: 5px;
+  margin-right: 2.3%;
+}
+
+.topbar .prev-next-buttons button {
+  color: #fafafa;
+  cursor: not-allowed;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  font-size: 30px;
+  border: 0px;
+  background-color: #000000;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+
+/* Cover Section */
+.Cover {
+  margin-left: 4%;
+  margin-right: 2%;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: url("ani1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: cover;
+  text-align: top;
+}
+
+.info, .p {
+  margin-top: 15%;
+  font-size: 5em;
+  margin-left: 10px;
+}
+
+.info img {
+  width: 80px;
+  height: 50px;
+  padding: 5px;
+}
+
+/* Main Content */
+.main {
+  padding: 20px;
+  background: linear-gradient(120deg, #282626, #717171);
+  border-radius: 10px;
+  background-size: 100%;
+  height: 1200px;
+  text-align: end;
+  overflow: hidden;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-y: scroll;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+  border-radius: 5px;
+}
+
+.table td {
+  font-size: 5em;
+}
+
+.table th {
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #aaa;
+}
+
+.table tr:hover {
+  background-color: #333;
+}
+
+/* Play Button */
+.play-btn {
+  cursor: pointer;
+  font-size: 50px;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.play-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Now Playing Section */
+.now-playing {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #282828;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Icons */
+.icons {
+  margin-top: 10px;
+  display: flex;
+  width: 100px;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icons i {
+  cursor: pointer;
+  size: 40px;
+}
+
+#myProgressBar {
+  width: 40vw;
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 3rem;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.player input {
+  width: 100%;
+}
+
+/* Responsive Breakpoints */
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100px;
+    font-size: 0.4rem;
+  }
+
+  .sidebar img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .topbar .search-bar input {
+    width: 250px;
+    height: 40px;
+  }
+
+  .Cover {
+    font-size: 3em;
+  }
+
+  .info, .p {
+    font-size: 3em;
+  }
+
+  .main {
+    height: auto;
+    text-align: center;
+  }
+
+  .table td {
+    font-size: 2em;
+  }
+
+  .table th {
+    font-size: 1.5em;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 120px;
+  }
+
+  .topbar .search-bar input {
+    width: 300px;
+  }
+
+  .table td {
+    font-size: 3em;
+  }
+
+  .table th {
+    font-size: 1.8em;
+  }
+}

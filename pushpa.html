@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pushapa 2</title>
+  <link rel="shortcut icon" href="./images/Spotify_favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style_p.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="devara.html">
+            <img src="cover/ani.jpg" alt="User 1">
+        </a>
+        <a href="pushpa.html">
+            <img src="cover/dsp.jpeg" alt="User 2">
+        </a>
+        <a href="mb.html">
+            <img src="cover/thaman.jpeg" alt="User 3">
+        </a>
+        <a href="rrr.html">
+            <img src="cover/keeravani.jpeg" alt="User 4">
+        </a>
+    </div>
+
+       </div>
+
+    <nav>
+        <div class="topbar">  
+            
+            <div class="img">
+            <a href="index.html">
+                <img src="cover/home (2).png" alt="Logo"  
+                style="cursor: pointer; max-width: 300px;">
+            </a>
+        </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for songs, artists, or albums...">
+               
+            
+            </div>
+        
+          
+
+
+            <div class="prev-next-buttons">
+                <a href="index.html"> 
+                    <button type="button" class="fa fas fa-chevron-left" style="cursor: pointer; max-width: 300px;"></button>
+                </a>
+                <button type="button" style="cursor: pointer; max-width: 300px;" class="fa fas fa-chevron-right"></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="playlist-header">
+            <img src="cover/pushpa2.jpg" alt="Playlist Cover">
+            <div>
+                <p>Public Playlist</p>
+                <h1>Pushpa 2 </h1>
+                <p> 6 songs, 22min 49sec</p>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Album</th>
+                    <th>Duration</th>
+                    <th>Play</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="song" data-src="songs/1_r.mp3">
+                    <td>1</td>
+                    <td>Gango Renuka Thalli</td>
+                    <td>Pushpa 2</td>
+                    <td>04:19</td>
+                    <td><i class="far fa-play-circle play-btn"></i></td>
+                </tr>
+                <tr class="song" data-src="songs/2_r.mp3">
+                    <td>2</td>
+                    <td>Kissik</td>
+                    <td>Pushpa 2</td>
+                    <td>04:11</td>
+                    <td><i class="far fa-play-circle play-btn"></i></td>
+                </tr>
+                <tr class="song" data-src="songs/3_r.mp3">
+                    <td>3</td>
+                    <td>Pushpa Pushpa</td>
+                    <td>Pushpa 2</td>
+                    <td>04:24</td>
+                    <td><i class="far fa-play-circle play-btn"></i></td>
+                </tr>
+                <tr class="song" data-src="songs/4_r.mp3">
+                    <td>4</td>
+                    <td>Peelings</td>
+                    <td>Pushpa 2</td>
+                    <td>04:02</td>
+                    <td><i class="far fa-play-circle play-btn"></i></td>
+                </tr>
+                <tr class="song" data-src="songs/5_r.mp3">
+                    <td>5</td>
+                    <td>Sooseki</td>
+                    <td>Pushpa 2</td>
+                    <td>03:25</td>
+                    <td><i class="far fa-play-circle play-btn"></i></td>
+                </tr>
+                <tr class="song" data-src="songs/6_r.mp3">
+                    <td>6</td>
+                    <td>Dammunte pattukora</td>
+                    <td>Pushpa 2</td>
+                    <td>01:33</td>
+                    <td><i class="far fa-play-circle play-btn"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="now-playing">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+        <div class="songInfo">
+            <img src="cover/playing.gif" width="42px" alt="" id="gif"> 
+            <div class="current-song-name"></div>
+
+        </div>
+    </div>
+
+    <script src="js/script_p.js"></script>
+    <script src="https://kit.fontawesome.com/6599108806.js" crossorigin="anonymous"></script>
+</body>
+</html>
